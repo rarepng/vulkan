@@ -3,7 +3,7 @@
 vulkan 1.3 simple cross platform online game.
 can load any gltf model, pbr materials, textures, animations and non-linear animations can be loaded
 full support for glsl shaders ( compile with glslc/glslangvalidator for vulkan ).
-## requirements
+## build requirements
 * c++20 compiler
 * vulkan( vulkan 1.3, vkbootstrap and vma_mem_alloc)
 * glfw
@@ -12,9 +12,9 @@ full support for glsl shaders ( compile with glslc/glslangvalidator for vulkan )
 * stb_image
 
 ## compiling
-### g++ for vulkan
+### gcc
 ``glslc -c shaders/*``<br>
-``g++ -std=c++20 tiny_gltf.cc *.cpp imgui/*.cpp -lglfw -lvulakn -o bin``
+``g++ -std=c++20 *.cpp */*.cpp -lglfw -lvulkan -o bin``
 
 visual studio can be used too for windows compiling (or mingw) by manually importing all the files or cmake by creating the script for it
 
